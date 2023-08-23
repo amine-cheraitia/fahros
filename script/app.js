@@ -1,6 +1,6 @@
 function updateCountdown() {
 	let dateActuel = new Date();
-	console.log(dateActuel);
+	/* console.log(dateActuel); */
 
 	var targetDate = new Date("2023-09-24");
 
@@ -15,11 +15,11 @@ function updateCountdown() {
 		(timeDifference % (1000 * 60 * 60)) / (1000 * 60)
 	);
 	var secondsDifference = Math.floor((timeDifference % (1000 * 60)) / 1000);
-
+	/* 
 	console.log("Différence en jours : " + daysDifference);
 	console.log("Différence en heures : " + hoursDifference);
 	console.log("Différence en minutes : " + minutesDifference);
-	console.log("Différence en secondes : " + secondsDifference);
+	console.log("Différence en secondes : " + secondsDifference); */
 	document.getElementById("days").textContent =
 		daysDifference + (daysDifference !== 1 ? " Days" : " Day");
 	document.getElementById("hours").textContent =
