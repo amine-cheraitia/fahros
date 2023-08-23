@@ -46,7 +46,7 @@
 
 .animate-ping-two {
 	animation: pingtwo 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-	transition-delay: 3s;
+	/* transition-delay: 1s; */
 }
 @keyframes pingtwo {
 	75%,

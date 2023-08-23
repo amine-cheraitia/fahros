@@ -605,9 +605,9 @@ video {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .text-9xl {
@@ -618,16 +618,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -703,7 +693,7 @@ video {
 
 .animate-ping-two {
   animation: pingtwo 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-  transition-delay: 3s;
+  /* transition-delay: 1s; */
 }
 
 @keyframes pingtwo {
