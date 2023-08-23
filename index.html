@@ -5,15 +5,38 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Compte à rebours vers 30 ans</title>
 		<link rel="stylesheet" href="./dist/output.css" />
+		<script src="/script/app.js" defer></script>
 	</head>
 	<body>
 		<div>
 			<div
-				class="h-screen w-screen flex justify-center items-center animate-color-change"
+				class="h-screen w-screen flex justify-center items-center flex-col animate-color-change"
 			>
-				<div class="text-9xl text-yellow-100 animate-ping">Tic</div>
-				<div class="text-9xl text-yellow-100 animate-ping-two">Tac</div>
+				<div
+					class="flex justify-center items-center animate-color-change font-serif"
+				>
+					<div class="text-7xl text-yellow-100 animate-ping ml-3">Tic</div>
+					<div class="text-7xl text-yellow-100 animate-ping-two">Tac</div>
+				</div>
+				<div class="mt-4 text-xl text-yellow-100 font-serif">
+					<span id="days"></span>, <span id="hours"></span>,
+					<span id="minutes"></span>, and <span id="seconds"></span> left
+				</div>
+				<div
+					class="flex justify-center items-center mt-4 text-xl text-yellow-100"
+				>
+					<div><span class="text-xl font-bold">L</span>oading</div>
+					<div class="flex items-center ml-2">
+						<div class="text-2xl text-gray-500 animate-bounce mr-1">.</div>
+						<div class="text-2xl text-gray-500 animate-bounce mr-1">.</div>
+						<div class="text-2xl text-gray-500 animate-bounce">.</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
+		<audio autoplay loop>
+			<source src="./media/tic-tac.mp3" type="audio/mpeg" />
+		</audio>
 	</body>
 </html>
