@@ -534,7 +534,113 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+.flex {
+  display: flex;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
+}
+
+.text-yellow-100 {
+  --tw-text-opacity: 1;
+  color: rgb(254 249 195 / var(--tw-text-opacity));
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: #19062f;
+    /* Violet foncé */
+  }
+
+  25% {
+    background-color: #0a1427;
+    /* Bleu foncé */
+  }
+
+  50% {
+    background-color: #171717;
+    /* Gris foncé */
+  }
+
+  /* 	65% {
+		background-color: #20302a;
+	} */
+
+  75% {
+    background-color: #20302a;
+    /* Noir */
+  }
+
+  95% {
+    background-color: #21050e;
+    /* Violet foncé */
+  }
+
+  100% {
+    background-color: #19062f;
+    /* Violet foncé */
+  }
+}
+
+.animate-color-change {
+  animation: colorChange 10s linear infinite;
+  /* Réglez la durée comme vous le souhaitez */
+}
+
+/* animation ping */
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes ping {
+  50%,
+	60% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+/* animation ping tac */
+
+.animate-ping-two {
+  animation: pingtwo 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  transition-delay: 3s;
+}
+
+@keyframes pingtwo {
+  75%,
+	100% {
+    transform: scale(1);
+    opacity: 0;
+  }
 }
